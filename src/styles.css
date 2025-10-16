@@ -17,4 +17,115 @@
 body {
   min-height: 100vh;
   background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.post {
+  background: #fff;
+  width: 470px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.post_header {
+  padding: 3px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_header .profile_info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post_header .profile_info .profile_img {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(to top right, orange, purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.post_header .profile_info .profile_img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-sizing: content-box;
+}
+
+.post_header .profile_info span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.options span {
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post_img {
+  width: 100%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.post_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post_body {
+  padding: 0 16px;
+}
+
+.post_actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.post_actions span {
+  display: flex;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.post_actions span:first-of-type {
+  font-size: 28px;
+}
+
+.post_actions span:last-of-type {
+  margin-left: auto;
+}
+
+.post_info {
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post_title {
+  margin-bottom: 8px;
+}
+
+.post_title .username {
+  font-weight: bold;
+  cursor: pointer;

@@ -16,7 +16,7 @@
           <span>janedoe</span>
         </div>
         <div class="options">
-          <span><ion-icon name="ellipsis-horizontal"></ion-icon>Icon</span>
+          <span><ion-icon name="ellipsis-horizontal"></ion-icon></span>
         </div>
       </div>
       <div class="post_img">
@@ -41,11 +41,34 @@
           <div class="comment">
             <span class="comment_username">johndoe</span>
             <span class="comment_text">Beautiful place</span>
+            <span class="heart_icon"></span>
           </div>
         </div>
+        <div class="post_timestamp">22 minutes ago</div>
       </div>
-      <div class="input_box"></div>
+      <div class="input_box">
+        <div class="emoji">
+          <ion-icon name="happy-outline"></ion-icon>
+          <input type="text" placeholder="Add a comment" />
+          <button>Post</button>
+        </div>
+      </div>
     </div>
+
+    <script>
+      const heartButtons = document.querySelectorAll'.heart_icon');
+
+      heartButtons.forEach(function (iconButton) {
+        iconButton.onclick = function () {
+          const isLiked = iconButton.childNodes[0].name === 'heart'
+          iconButton.childNodes[0].name = isLiked ? 'heart_outline' : 'heart'
+          iconButton.className = isLiked
+          ? 'heart_icon'
+          : 'heart_icon heart_icon_fill'
+        }
+      }
+    </script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -54,6 +77,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    Basic usage
   </body>
 </html>

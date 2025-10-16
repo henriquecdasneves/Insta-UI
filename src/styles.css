@@ -129,3 +129,65 @@ body {
 .post_title .username {
   font-weight: bold;
   cursor: pointer;
+}
+
+.post_comments {
+  margin-bottom: 10px;
+}
+
+.post_comments > span {
+  display: block;
+  color: var(--light-text);
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.post_comments .comment {
+  display: flex;
+}
+
+.post_comments .comment .comment_username {
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.post_timestamp {
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--light-text);
+}
+
+.input_box {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.input_box.emoji {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.input_box input {
+  border: none;
+  outline: none;
+  color: var(--light-text);
+  width: 100%;
+  margin: 0 12px;
+}
+
+.input_box button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--btn-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.heart_icon_fill {
+  color: red;
+}
